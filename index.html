@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Mart - Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/9bd679d76f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mini Mart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favo.html">Favorites</a>
+          </li>
+        </ul>
+        <form class="search-box">
+          <input type="search" placeholder="Search...">
+
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <ul class="navbar-nav d-none d-lg-flex align-items-center">
+          <li class="nav-item">
+            <a href="favo.html" class="btn position-relative icon-btn">
+
+              <i class="fa-solid fa-heart"></i>
+
+              <span class="position-absolute badge rounded-pill bg-warning icon-badge ">
+                0
+                <span class="visually-hidden">favorites</span>
+              </span>
+
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="cart.html" class="btn position-relative icon-btn">
+
+              <i class="fa-solid fa-cart-shopping"></i>
+
+              <span class="position-absolute badge rounded-pill bg-warning icon-badge">
+                0
+                <span class="visually-hidden">cart</span>
+              </span>
+
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              Login
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <main>
+    <div class="imgg">
+      <img src="./img/bg.png" class="img" height="700px" width="100%">
+    </div>
+    <div class="hero-content">
+      <p class="hero-small">STYLE • TECH • HOME • MORE</p>
+
+      <h1>
+        Everything You Need,<br>
+        <span>All in One Place.</span>
+      </h1>
+
+      <p class="hero-text">
+        Discover fashion, electronics, jewellery, home essentials and more.
+      </p>
+
+      <a href="products.html" class="shop-btn">
+        Shop Now <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+    <section class="categories-section">
+
+      <div class="container">
+
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-subtitle">
+          Explore our most popular categories
+        </p>
+
+        <div class="row justify-content-center g-4 mt-3">
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg">
+            <a href="products.html?category=electronics" class="category-card">
+              <div class="category-img">
+                <img src="./img/Electronics.png" alt="Electronics">
+              </div>
+              <h5>Electronics</h5>
+            </a>
+          </div>
+
+
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg">
+            <a href="products.html?category=fashion" class="category-card">
+              <div class="category-img">
+                <img src="./img/Fashion.png" alt="Fashion">
+              </div>
+              <h5>Fashion</h5>
+            </a>
+          </div>
+
+
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg">
+            <a href="products.html?category=home" class="category-card">
+              <div class="category-img">
+                <img src="./img/home.png" alt="Home & Kitchen">
+              </div>
+              <h5>Home & Kitchen</h5>
+            </a>
+          </div>
+
+
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg">
+            <a href="products.html?category=beauty" class="category-card">
+              <div class="category-img">
+                <img src="./img/Beauty.png" alt="Beauty">
+              </div>
+              <h5>Beauty</h5>
+            </a>
+          </div>
+
+
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg">
+            <a href="products.html?category=sports" class="category-card">
+              <div class="category-img">
+                <img src="./img/Sports.png" alt="Sports">
+              </div>
+              <h5>Sports</h5>
+            </a>
+          </div>
+
+
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg">
+            <a href="products.html?category=groceries" class="category-card">
+              <div class="category-img">
+                <img src="./img/Groceries.png" alt="Groceries">
+              </div>
+              <h5>Groceries</h5>
+            </a>
+          </div>
+
+
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg">
+            <a href="products.html?category=automotive" class="category-card">
+              <div class="category-img">
+                <img src="./img/car.png" alt="Automotive">
+              </div>
+              <h5>Automotive</h5>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section class="best-seller py-5">
+
+      <div class="container">
+
+        <h2 class="section-title">Best Seller</h2>
+
+        <p class="section-subtitle">
+          Our most popular products based on sales.
+        </p>
+
+        <div class="row g-4 mt-3" id="bestSellerContainer">
+
+          <!-- Product 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="1">
+
+              <div class="product-img-box">
+                <img src="./img/ghar.png" class="card-img-top" alt="Ghar Soap">
+
+                <button class="favorite-btn" type="button" data-id="1">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Beauty</p>
+
+                <h5 class="card-title">
+                  Ghar Soaps Sandalwood & Saffron Magic Bar For Bath (300 Gms Pack Of 3)
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+
+                  <span>4.0</span>
+                </div>
+
+                <h4 class="product-price">₹368</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="1">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Product 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="2">
+
+              <div class="product-img-box">
+                <img src="./img/cetaphil.png" class="card-img-top" alt="Cetaphil">
+
+                <button class="favorite-btn" type="button" data-id="2">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Beauty</p>
+
+                <h5 class="card-title">
+                  Cetaphil Gentle Skin Hydrating Face Wash 118ml
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+
+                  <span>4.5</span>
+                </div>
+
+                <h4 class="product-price">₹370</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="2">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Product 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="3">
+
+              <div class="product-img-box">
+                <img src="./img/net.png" class="card-img-top" alt="Mosquito Net">
+
+                <button class="favorite-btn" type="button" data-id="3">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Home</p>
+
+                <h5 class="card-title">
+                  LifeKrafts Polyester Magnetic Mosquito Net for All Door
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+
+                  <span>4.0</span>
+                </div>
+
+                <h4 class="product-price">₹898</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="3">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Product 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="4">
+
+              <div class="product-img-box">
+                <img src="./img/dumbells.png" class="card-img-top" alt="Dumbbells">
+
+                <button class="favorite-btn" type="button" data-id="4">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Sports</p>
+
+                <h5 class="card-title">
+                  Lifelong PVC Hex Fixed Dumbbells Pack of 2 (2kg*2)
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+
+                  <span>4.5</span>
+                </div>
+
+                <h4 class="product-price">₹370</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="4">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Product 5 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="5">
+
+              <div class="product-img-box">
+                <img src="./img/cloth.png" class="card-img-top" alt="Microfiber Cloth">
+
+                <button class="favorite-btn" type="button" data-id="5">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Automotive</p>
+
+                <h5 class="card-title">
+                  SOFTSPUN Microfiber Cloth - 4 pcs - 40x40 cms - 340 GSM Grey
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+
+                  <span>4.0</span>
+                </div>
+
+                <h4 class="product-price">₹244</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="5">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="6">
+
+              <div class="product-img-box">
+                <img src="./img/BOAT.png" class="card-img-top" alt="Microfiber Cloth">
+
+                <button class="favorite-btn" type="button" data-id="6">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Automotive</p>
+
+                <h5 class="card-title">
+                  boAt Airdopes 219, 4Mics ENx, 40H Battery
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+
+                  <span>4.5</span>
+                </div>
+
+                <h4 class="product-price">₹999</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="6">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="7">
+
+              <div class="product-img-box">
+                <img src="./img/mos.png" class="card-img-top" alt="Microfiber Cloth">
+
+                <button class="favorite-btn" type="button" data-id="7">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Automotive</p>
+
+                <h5 class="card-title">
+                  Mortein Advanced Anti-Mosquito Racquet | Mosquito Bat | Electric Fly Swatter
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+
+                  <span>4.0</span>
+                </div>
+
+                <h4 class="product-price">₹435</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="7">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="8">
+
+              <div class="product-img-box">
+                <img src="./img/chain.png" class="card-img-top" alt="Microfiber Cloth">
+
+                <button class="favorite-btn" type="button" data-id="8">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Automotive</p>
+
+                <h5 class="card-title">
+                  Shining Diva Fashion 5 Pcs Latest Stylish Heart Butterfly Pearl Necklace Jewellery Set
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+
+                  <span>4.0</span>
+                </div>
+
+                <h4 class="product-price">₹298</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="8">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="9">
+
+              <div class="product-img-box">
+                <img src="./img/bracelet.png" class="card-img-top" alt="Microfiber Cloth">
+
+                <button class="favorite-btn" type="button" data-id="9">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Automotive</p>
+
+                <h5 class="card-title">
+                  YouBella Jewellery Bracelets for Women Stylish Rose Gold Plated Crystal Bracelet
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+
+                  <span>4.2</span>
+                </div>
+
+                <h4 class="product-price">₹189</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="9">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card product-card h-100" data-id="10">
+
+              <div class="product-img-box">
+                <img src="./img/sunscreen.png" class="card-img-top" alt="Minimalist Sunscreen">
+
+                <button class="favorite-btn" type="button" data-id="10">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <p class="product-category">Beauty</p>
+
+                <h5 class="card-title">
+                  Minimalist Sunscreen SPF 50 PA++++ with Niacinamide & Multi-Vitamins
+                </h5>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.8</span>
+                </div>
+
+                <h4 class="product-price">₹369</h4>
+
+                <button class="btn add-cart-btn mt-auto" type="button" data-id="10">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- Card 11 – The Derma Co 10% Vitamin C Face Serum -->
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+  <div class="card product-card h-100" data-id="11">
+    <div class="product-img-box">
+      <img src="./img/serum.png" class="card-img-top" alt="Face Serum">
+      <button class="favorite-btn" type="button" data-id="11">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+    </div>
+
+    <div class="card-body d-flex flex-column">
+      <p class="product-category">Beauty</p>
+
+      <h5 class="card-title">
+        The Derma Co 10% Vitamin C Face Serum
+      </h5>
+
+      <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <span>4.8</span>
+      </div>
+
+      <h4 class="product-price">₹538</h4>
+
+      <button class="btn add-cart-btn mt-auto" type="button" data-id="11">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Card 12 – ZOUK Flap Sling Bag -->
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+  <div class="card product-card h-100" data-id="12">
+    <div class="product-img-box">
+      <img src="./img/bag.png" class="card-img-top" alt="Flap Sling Bag">
+      <button class="favorite-btn" type="button" data-id="12">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+    </div>
+
+    <div class="card-body d-flex flex-column">
+      <p class="product-category">Fashion</p>
+
+      <h5 class="card-title">
+        ZOUK Flap Sling Bag
+      </h5>
+
+      <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>4.7</span>
+      </div>
+
+      <h4 class="product-price">₹849</h4>
+
+      <button class="btn add-cart-btn mt-auto" type="button" data-id="12">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+
+    </section>
+
+    <section class="add-more text-center py-4">
+      <a href="products.html" class="btn btn-dark px-4 py-2" id="btn-more">
+        View More
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="row g-4">
+
+        <!-- Mini Mart -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+          <h3>Mini Mart</h3>
+
+          <p>ABC Street, Chennai - 624000</p>
+          <p>minimart@gmail.com</p>
+          <p>+91 12345 67890</p>
+
+        </div>
+
+        <!-- Categories -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+          <h3>Categories</h3>
+
+          <ul class="footer-links">
+            <li><a href="products.html?category=electronics">Electronics</a></li>
+            <li><a href="products.html?category=home">Home & Kitchen</a></li>
+            <li><a href="products.html?category=sports">Sports</a></li>
+            <li><a href="products.html?category=groceries">Groceries</a></li>
+            <li><a href="products.html?category=beauty">Beauty</a></li>
+            <li><a href="products.html?category=fashion">Fashion</a></li>
+            <li><a href="products.html?category=automotive">Automotive</a></li>
+          </ul>
+
+        </div>
+
+        <!-- Contact -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+          <h3>Contact Us</h3>
+
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Track Orders</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Cancellation</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+
+        </div>
+
+        <!-- Support -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+          <h3>Support</h3>
+
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 Mini Mart. All Rights Reserved.
+        </p>
+
+        <ul class="social-icons">
+
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="product.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
