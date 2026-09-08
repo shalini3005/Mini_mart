@@ -503,10 +503,10 @@ body {
 
 }
 
-.text-truncate-2 {
+/* .text-truncate-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     height: 44px;
-}
+}  */
