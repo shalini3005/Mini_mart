@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Mart - Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="auth-modal.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/9bd679d76f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mini Mart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="cart.html">Cart</a>
+        </li>    
+        <li class="nav-item">
+            <a class="nav-link" href="favo.html">Favorites</a>
+        </li>
+      </ul>
+      <form class="search-box">
+  <input type="search" placeholder="Search...">
+
+  <button type="submit">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+</form>
+      
+    <ul class="navbar-nav d-none d-lg-flex align-items-center">
+    <li class="nav-item">
+        <a href="favo.html" class="btn position-relative icon-btn">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <span class="position-absolute badge rounded-pill bg-warning icon-badge ">
+                0
+                <span class="visually-hidden">favorites</span>
+            </span>
+
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="cart.html" class="btn position-relative icon-btn">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="position-absolute badge rounded-pill bg-warning icon-badge">
+                0
+                <span class="visually-hidden">cart</span>
+            </span>
+
+        </a>
+    </li>
+
+</ul>
+
+<ul class="navbar-nav mb-2 mb-lg-0">
+
+    <li class="nav-item">
+        <a class="nav-link" href="login.html">
+            Login
+        </a>
+    </li>
+
+</ul>
+    
+    </div>
+    
+  </div>
+</nav>
+<main>
+
+  <section class="cart-section py-5">
+
+    <div class="container">
+
+      <h2 class="section-title">Shopping Cart</h2>
+
+      <p class="section-subtitle">
+        Review your selected items before checkout.
+      </p>
+
+      <div class="row g-4 mt-3">
+
+        <!-- CART ITEMS -->
+        <div class="col-lg-8">
+
+          <div id="cartItemsContainer">
+
+            <!-- Cart Item 1 -->
+            <div class="cart-item" data-id="1">
+
+              <div class="cart-img">
+                <img src="./img/ghar.png" alt="Ghar Soap">
+              </div>
+
+              <div class="cart-details">
+
+                <h5>Ghar Soaps Sandalwood & Saffron Magic Bar</h5>
+
+                <p class="cart-category">Beauty</p>
+
+                <h4 class="cart-price">₹368</h4>
+
+                <div class="quantity-box">
+
+                  <button class="qty-btn decrease-btn" type="button">
+                    -
+                  </button>
+
+                  <span class="quantity">1</span>
+
+                  <button class="qty-btn increase-btn" type="button">
+                    +
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="cart-actions">
+
+                <button class="remove-btn" type="button">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+
+                <p class="item-total">₹368</p>
+
+              </div>
+
+            </div>
+
+
+            <!-- Cart Item 2 -->
+            <div class="cart-item" data-id="2">
+
+              <div class="cart-img">
+                <img src="./img/cetaphil.png" alt="Cetaphil">
+              </div>
+
+              <div class="cart-details">
+
+                <h5>Cetaphil Gentle Skin Hydrating Face Wash</h5>
+
+                <p class="cart-category">Beauty</p>
+
+                <h4 class="cart-price">₹370</h4>
+
+                <div class="quantity-box">
+
+                  <button class="qty-btn decrease-btn" type="button">
+                    -
+                  </button>
+
+                  <span class="quantity">1</span>
+
+                  <button class="qty-btn increase-btn" type="button">
+                    +
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="cart-actions">
+
+                <button class="remove-btn" type="button">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+
+                <p class="item-total">₹370</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Empty Cart State -->
+          <div class="empty-cart text-center py-5 d-none bg-white p-4 rounded-3 border" id="emptyCart">
+            <i class="fa-solid fa-cart-shopping fa-3x text-muted mb-3"></i>
+            <h3>Your Shopping Cart is Empty</h3>
+            <p class="text-muted">Looks like you haven't added anything to your cart yet.</p>
+            <a href="products.html" class="btn btn-dark mt-2 px-4 py-2">Start Shopping</a>
+          </div>
+
+        </div>
+
+
+        <!-- ORDER SUMMARY -->
+        <div class="col-lg-4">
+
+          <div class="order-summary">
+
+            <h4>Order Summary</h4>
+
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span id="subtotal">₹0</span>
+            </div>
+
+            <div class="summary-row">
+              <span>Delivery</span>
+              <span id="deliveryCharge">₹50</span>
+            </div>
+
+            <div class="summary-row">
+              <span>Discount</span>
+              <span>- ₹0</span>
+            </div>
+
+            <hr>
+
+            <div class="summary-row total-row">
+              <span>Total</span>
+              <span id="grandTotal">₹0</span>
+            </div>
+
+            <a href="checkout.html" class="checkout-btn" id="checkoutBtn">
+              Proceed to Checkout
+            </a>
+
+            <a href="products.html" class="continue-btn">
+              Continue Shopping
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Mini Mart -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <h3>Mini Mart</h3>
+
+                <p>ABC Street, Chennai - 624000</p>
+                <p>minimart@gmail.com</p>
+                <p>+91 12345 67890</p>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <h3>Categories</h3>
+
+                <ul class="footer-links">
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Home & Kitchen</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Groceries</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Automotive</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <h3>Contact Us</h3>
+
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Track Orders</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- Support -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <h3>Support</h3>
+
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Mini Mart. All Rights Reserved.
+            </p>
+
+            <ul class="social-icons">
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="product.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
