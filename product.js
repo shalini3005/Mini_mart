@@ -518,11 +518,11 @@ const products = [
     stock: 10,
     bestSeller: false,
 
-    details: {
-        type: "Backpack",
-        style: "Casual",
-        usage: "College & Travel"
-    },
+    // details: {
+    //     type: "Backpack",
+    //     style: "Casual",
+    //     usage: "College & Travel"
+    // },
 
     reviews: [
         {
