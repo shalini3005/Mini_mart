@@ -377,5 +377,164 @@ const products = [
                 comment: "Good quality and looks beautiful."
             }
         ]
-    }
+    },
+    {
+    id: 13,
+    name: "Noise ColorFit Smart Watch",
+    category: "Electronics",
+    brand: "Noise",
+    price: 1499,
+    rating: 4.5,
+    image: "./img/watch.png",
+    description: "Stylish smart watch with fitness tracking, notifications and multiple sports modes.",
+    stock: 18,
+    bestSeller: true,
+
+    details: {
+        type: "Smart Watch",
+        display: "Touch Display",
+        usage: "Fitness & Daily Use"
+    },
+
+    reviews: [
+        {
+            name: "Arun",
+            rating: 5,
+            comment: "Good display and battery life."
+        },
+        {
+            name: "Kavya",
+            rating: 4,
+            comment: "Worth the price and easy to use."
+        }
+    ]
+},
+
+{
+    id: 14,
+    name: "Campus Women's Running Shoes",
+    category: "Fashion",
+    brand: "Campus",
+    price: 999,
+    rating: 4.4,
+    image: "./img/shoes.png",
+    description: "Comfortable and lightweight running shoes suitable for walking, running and daily wear.",
+    stock: 15,
+    bestSeller: false,
+
+    details: {
+        type: "Running Shoes",
+        style: "Sports",
+        usage: "Running & Casual"
+    },
+
+    reviews: [
+        {
+            name: "Priya",
+            rating: 5,
+            comment: "Very comfortable for daily walking."
+        },
+        {
+            name: "Divya",
+            rating: 4,
+            comment: "Nice design and good quality."
+        }
+    ]
+},
+
+{
+    id: 15,
+    name: "boAt Airdopes Wireless Earbuds",
+    category: "Electronics",
+    brand: "boAt",
+    price: 1299,
+    rating: 4.6,
+    image: "./img/earbuds.png",
+    description: "Wireless earbuds with clear sound, touch controls and long-lasting battery backup.",
+    stock: 25,
+    bestSeller: true,
+
+    details: {
+        type: "Wireless Earbuds",
+        connectivity: "Bluetooth",
+        usage: "Music & Calls"
+    },
+
+    reviews: [
+        {
+            name: "Rahul",
+            rating: 5,
+            comment: "Sound quality is excellent for the price."
+        },
+        {
+            name: "Nisha",
+            rating: 4,
+            comment: "Good battery backup and comfortable fit."
+        }
+    ]
+},
+
+{
+    id: 16,
+    name: "Maybelline Fit Me Foundation",
+    category: "Beauty",
+    brand: "Maybelline",
+    price: 649,
+    rating: 4.7,
+    image: "./img/foundation.png",
+    description: "Lightweight liquid foundation that provides natural-looking coverage for everyday makeup.",
+    stock: 20,
+    bestSeller: true,
+
+    details: {
+        type: "Liquid Foundation",
+        finish: "Matte",
+        usage: "Face Makeup"
+    },
+
+    reviews: [
+        {
+            name: "Shreya",
+            rating: 5,
+            comment: "Blends easily and gives a natural finish."
+        },
+        {
+            name: "Meena",
+            rating: 4,
+            comment: "Good coverage and stays for a long time."
+        }
+    ]
+},
+
+{
+    id: 17,
+    name: "American Tourister Casual Backpack",
+    category: "Fashion",
+    brand: "American Tourister",
+    price: 1199,
+    rating: 4.6,
+    image: "./img/backpack.png",
+    description: "Spacious and durable backpack suitable for college, office and everyday travel.",
+    stock: 10,
+    bestSeller: false,
+
+    details: {
+        type: "Backpack",
+        style: "Casual",
+        usage: "College & Travel"
+    },
+
+    reviews: [
+        {
+            name: "Karthik",
+            rating: 5,
+            comment: "Spacious bag with very good quality."
+        },
+        {
+            name: "Anu",
+            rating: 4,
+            comment: "Comfortable to carry and looks stylish."
+        }
+    ]
+}
 ];
