@@ -99,13 +99,23 @@
 }
 .imgg{
     position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.imgg .img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
 }
 .hero-content {
     position: absolute;
-    top: 49%;
-    left: 10%;
+    top: 50%;
+    left: 8%;
     transform: translateY(-50%);
-    width: 500px;
+    max-width: 500px;
+    width: calc(100%-16%);
+    z-index: 2;
 }
 
 .hero-small {
@@ -414,9 +424,29 @@
 
     
 @media (max-width: 768px) {
-    .img {
-        width: 100%;
-        height: 550px;
+    .imgg .img {
+        height: 450px;
+        object-position: 75% center;
+    }
+    .hero-small {
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+    .hero-content h1 {
+        font-size: 24px;            /* Scales down large heading to fit */
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+    .hero-text {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 18px;
+        max-width: 280px;
+    }
+    .shop-btn {
+        padding: 9px 20px;
+        font-size: 13px;
     }
     .footer {
         text-align: center;
