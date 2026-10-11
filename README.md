@@ -30,7 +30,14 @@ A responsive, multi-page frontend e-commerce web application built with HTML, CS
 
 ---
 
+## 🔑 Demo Login
 
+- **Email**: `user@minimart.com`
+- **Password**: `password123`
+
+*(You can also register a new account on the Register page)*
+
+---
 
 ## 📁 Project Structure
 
@@ -49,3 +56,10 @@ mini_mart/
 ├── script.js        # Core logic & state management
 ├── *.css            # Modular stylesheets
 └── img/             # Images & media assets
+```
+
+---
+
+## 📄 License
+
+This project is open-source and free to use.
